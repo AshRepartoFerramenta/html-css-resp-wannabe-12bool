@@ -1,0 +1,131 @@
+/* Inzio Container */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+/* fine Container */
+
+/* Inizio Caratteri */
+h2 {
+    font-size: 38px;
+    margin: 21px 0;
+}
+
+h3 {
+    margin: 19px 0;
+}
+
+hr {
+    margin: 8px 0;
+}
+/* Fine Caratteri
+ */
+/* LEZIONI */
+#lezioni .container img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#lezioni {
+    text-align: center;
+    margin-top: 100px;
+}
+/* FINE LEZIONI */
+
+/* STEPS */
+#steps {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+/* FINE STEPS */
+
+/* WHY */
+#why {
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+#why img {
+    height: 260px;
+}
+
+#why .container img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
+}
+/* FINE WHY */
+/* COMMON */
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Inizio MediaQuery Tablet*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+    [class*="col-"] {
+        padding: 15px 30px;
+    }
+}
+/* Fine Media Query Tablet */
+
+/* Inizio MediaQuery Smartphone */
+@media all and (max-width: 768px) {
+    body {
+        background-color: #e9c46a;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    img {
+        height: 150px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    [class*="col-"] {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    #lezioni {
+        margin-top: 0;
+    }
+    #lezioni .container {
+        background-color: #f4a261;
+    }
+    #lezioni>.container {
+        margin-top: 0;
+    }
+    #steps .container {
+        background-color: #e76f51;
+    }
+    #why .container {
+        margin-bottom: 50px;
+        background-color: #cc4c56;
+    }
+    #why .container img {
+        height: 150px;
+    }
+}
+/* Fine MediaQuery Smartphone */
